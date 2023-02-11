@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { RoughNotation } from "react-rough-notation";
 import Link from 'next/link';
 
