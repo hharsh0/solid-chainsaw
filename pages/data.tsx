@@ -14,7 +14,7 @@ async function fetchData(url: string): Promise<any> {
 
 function Data() {
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<any>([]);
   
   
 
@@ -41,7 +41,7 @@ function Data() {
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
-            {data && data.map((item,key) => (
+            {data && data.map((item:any,key:any) => (
                 <Card key={key} avatar={item.avatar} firstName={item.first_name} lastName={item.last_name} email={item.email} />
             ))}
           </div>

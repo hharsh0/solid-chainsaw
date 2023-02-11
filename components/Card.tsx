@@ -1,5 +1,12 @@
 
-function Card({avatar,firstName,lastName,email}:any) {
+interface Props{
+  avatar: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+}
+
+function Card({ avatar, firstName, lastName, email }: Props) {
   return (
     <div
       className="md p-4 w-full md:w-1/2 shrink-0"
