@@ -12,7 +12,7 @@ async function fetchData(url: string): Promise<any> {
   }
 }
 
-function projects() {
+function Data() {
 
   const [data, setData] = useState([]);
   
@@ -51,4 +51,4 @@ function projects() {
   );
 }
 
-export default projects
+export default Data
